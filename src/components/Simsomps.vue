@@ -23,8 +23,9 @@ interface simpson {
     id: Number;
     name: string;
     image: string;
-    frases: string[];s
+    frases: string[];
     genero?: string;
+    s:any
 }
 
 const simpson = ref<simpson | null>(null);
@@ -42,7 +43,8 @@ watch(data, (newSimpson) => {
     name: newSimpson.name,
     image: newSimpson.portrait_path,
     frases: newSimpson.phrases,
-    genero: newSimpson.gender
+    genero: newSimpson.gender,
+    s: valorAdecuado
   };
 });
 </script>
