@@ -17,7 +17,7 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue'
 import { useSimpson } from '../composable/useSimpson';
-import type { SimpsonsResponse } from '../interface/simpsonsResponse'
+import type { SimpsonsResponse } from '../interfaces/simpsonsResponse'
 
 interface simpson {
     id: Number;
